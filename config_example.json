@@ -1,0 +1,35 @@
+{
+  "start_urls": ["https://example.com"],
+  "max_depth": 3,
+  "max_pages": 500,
+  "max_workers": 5,
+  "request_timeout": 30,
+  "delay_between_requests": 0.5,
+
+  "allowed_domains": [],
+  "blocked_domains": ["ads.example.com", "tracker.example.com"],
+  "allowed_extensions": [".html", ".htm", ".php", ".asp", ".aspx", ".jsp"],
+  "blocked_extensions": [".pdf", ".doc", ".docx", ".xls", ".xlsx", ".zip", ".rar", ".7z", ".jpg", ".jpeg", ".png", ".gif", ".mp3", ".mp4", ".avi", ".css", ".js"],
+
+  "user_agents": [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  ],
+  "proxies": [],
+
+  "output_dir": "./output",
+  "save_html": false,
+  "save_text": true,
+  "save_links": true,
+  "save_images": true,
+  "save_to_json": true,
+  "save_to_csv": true,
+  "save_to_db": true,
+
+  "max_retries": 3,
+  "retry_delay": 2.0,
+
+  "log_level": "INFO",
+  "log_file": "crawler.log"
+}
